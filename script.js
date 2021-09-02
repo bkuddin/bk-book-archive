@@ -12,7 +12,7 @@ const searchBook = () => {
   searchInput.value = "";
   errorDiv.innerText = "";
 
-  const url = `http://openlibrary.org/search.json?q=${searchInputText}`;
+  const url = `https://openlibrary.org/search.json?q=${searchInputText}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayBook(data.docs));
