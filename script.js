@@ -36,7 +36,7 @@ const searchBook = () => {
 const displayBook = (books) => {
   // Error Handing
   if (books.length === 0) {
-    errorDiv.innerText = "Result Not Found";
+    errorDiv.innerText = "Sorry! No result found :(";
     spinnerDiv.classList.add("d-none");
   } else {
     errorDiv.style.display = "none";
