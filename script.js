@@ -27,10 +27,11 @@ const displayBook = (books) => {
     errorDiv.style.display = "none";
     spinnerDiv.classList.add("d-none");
   }
+
+  const bookContainer = document.getElementById("book-container");
+  bookContainer.textContent = "";
   books?.forEach((book) => {
     // console.log(book);
-    const bookContainer = document.getElementById("book-container");
-
     const div = document.createElement("div");
 
     div.classList.add("col");
