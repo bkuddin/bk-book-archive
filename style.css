@@ -1,4 +1,5 @@
-.container {
+.header-section {
   background-image: url(images/book-archive.jpg);
   background-size: cover;
+  height: 10rem;
 }
