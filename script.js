@@ -28,7 +28,7 @@ const displayBook = (books) => {
     spinnerDiv.classList.add("d-none");
   }
   books?.forEach((book) => {
-    console.log(book);
+    // console.log(book);
     const bookContainer = document.getElementById("book-container");
 
     const div = document.createElement("div");
@@ -39,10 +39,13 @@ const displayBook = (books) => {
     <div class="card text-center h-100 shadow">
     <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top book-cover " alt="..." />
     <div class="card-body">
-      <h4 class="card-title fs-4">${book.title}</h4>
+      <h1 class="card-title fs-4 fw-bold">${book.title}</h1>
       <hr>
-      <p class="card-text text-secondary fs-5"> <span class="fw-bold">Author</span> <br> ${book.author_name}</p>
+      <h2 class="card-text text-secondary fs-5"> <span class="fw-bold">Author</span> <br> ${book.author_name}</h2>
+      <hr>
       <p class="card-text"> <span class="fw-bold" >First published:</span> <br> ${book.first_publish_year}</p>
+      <p class="card-text"> <span class="fw-bold" >Publisher:</span> <br> ${book.publisher}</p>
+      <p class="card-text bg-primary text-white"> <span class="fw-bold" >Book count:</span> <br> ${book.ebook_count_i}</p>
     </div>
   </div>
     
