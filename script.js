@@ -47,32 +47,20 @@ const displayBook = (books) => {
     const bookContainer = document.getElementById("book-container");
 
     const div = document.createElement("div");
-    div.classList.add("col-md-3");
+
+    div.classList.add("col");
+
     div.innerHTML = `
-
-    <div class="rounded overflow-hidden border p-2">
-    <img 
-      src="<img src="${book.cover_i}-M.jpg" />"
-      class="w-100"
-      alt=""
-    />
+    <div class="card h-100">
+    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h4 class="card-title">${book.title}</h4>
+      
+      <p class="card-text fs-4"> <span class="fw-bold">Author name:</span> ${book.author_name}</p>
+      <p class="card-text"> <span class="fw-bold" >First published:</span> ${book.first_publish_year}</p>
+    </div>
   </div>
-
-  <div
-    class="
-      py-2
-      d-flex
-      justify-content-between
-      align-items-center
-      d-md-block
-      text-md-center
-    "
-  >
-    <h3>${book.title}</h3>
-    <h4>Author name: ${book.author_name}</h4>
-    <h6> First published: ${book.first_publish_year}</h6>
-    <!-- <button class="btn btn-dark">Learn More</button> -->
-  </div>    
+    
     `;
 
     bookContainer.appendChild(div);
