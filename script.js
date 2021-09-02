@@ -51,13 +51,13 @@ const displayBook = (books) => {
     div.classList.add("col");
 
     div.innerHTML = `
-    <div class="card h-100">
-    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="..." />
+    <div class="card text-center h-100 shadow">
+    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top book-cover " alt="..." />
     <div class="card-body">
-      <h4 class="card-title">${book.title}</h4>
-      
-      <p class="card-text fs-4"> <span class="fw-bold">Author name:</span> ${book.author_name}</p>
-      <p class="card-text"> <span class="fw-bold" >First published:</span> ${book.first_publish_year}</p>
+      <h4 class="card-title fs-4">${book.title}</h4>
+      <hr>
+      <p class="card-text text-secondary fs-5"> <span class="fw-bold">Author</span> <br> ${book.author_name}</p>
+      <p class="card-text"> <span class="fw-bold" >First published:</span> <br> ${book.first_publish_year}</p>
     </div>
   </div>
     
