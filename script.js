@@ -1,18 +1,3 @@
-/* 
-ASSIGNMENT REQUIREMENTS
-1. display book name
-2. display author name
-3. display first publish date
-4. display multiple result
-5. display total search result
-6. display no result is found error
-FOR BONUS
-1. use arrow function
-2. use forEach loop
-3. use triple equal
-4. display book cover
-*/
-
 const errorDiv = document.getElementById("errors");
 const spinnerDiv = document.getElementById("spinner");
 
