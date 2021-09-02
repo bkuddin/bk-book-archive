@@ -45,7 +45,7 @@ const displayBook = (books) => {
       <hr>
       <p class="card-text"> <span class="fw-bold" >First published:</span> <br> ${book.first_publish_year}</p>
       <p class="card-text"> <span class="fw-bold" >Publisher:</span> <br> ${book.publisher}</p>
-      <p class="card-text bg-primary text-white"> <span class="fw-bold" >Book count:</span> <br> ${book.ebook_count_i}</p>
+      
     </div>
   </div>
     
